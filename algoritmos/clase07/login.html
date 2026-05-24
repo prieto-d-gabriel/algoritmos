@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Tailwind</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="login.js"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
+
+        <h2 class="text-3xl font-bold text-center text-blue-600 mb-6">
+            Iniciar Sesión
+        </h2>
+
+        <form>
+
+            <!-- Usuario -->
+            <div class="mb-4">
+                <label for="txtUsuario" class="block text-gray-700 font-medium mb-2">
+                    Usuario
+                </label>
+
+                <input 
+                    type="text"
+                    id="txtUsuario"
+                    placeholder="Ingrese su usuario"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+            </div>
+
+            <!-- Contraseña -->
+            <div class="mb-6">
+                <label for="txtPassword" class="block text-gray-700 font-medium mb-2">
+                    Contraseña
+                </label>
+
+                <input 
+                    type="password"
+                    id="txtPassword"
+                    placeholder="Ingrese su contraseña"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+            </div>
+
+            <!-- Botón -->
+            <button 
+            onclick="ejecutar();"
+                type="submit"
+                id="btnLogin"
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition duration-300"
+            >
+                Ingresar
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
